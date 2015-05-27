@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/Classes/ParseAdapter.m \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/Classes/ParseAdapter.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PF_Twitter.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFTwitterUtils.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFPush.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFPurchase.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFProduct.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFInstallation.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFSession.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFRole.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFRelation.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFQuery.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFObject+Subclass.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFGeoPoint.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFFile.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFConfig.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFCloud.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFSubclassing.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFObject.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFUser.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFAnonymousUtils.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFConstants.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFAnalytics.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFNullability.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/PFACL.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Headers/Parse.h \
+  /Users/eileenzhang/Documents/AS_Workspace/iOS64TitaniumParse/iphone/platform/Parse.framework/Modules/module.modulemap
