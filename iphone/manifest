@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: iOS64TitaniumParse
+author: Eileen
+license: Specify your license
+copyright: Copyright (c) 2015 by Your Company
+
+# these should not be edited
+name: iOS64TitaniumParse
+moduleid: com.ez2010.ios64parse
+guid: fac13f8a-1d68-45d2-82ff-4cac163d9b5e
+platform: iphone
+minsdk: 3.5.1.GA
