@@ -6,7 +6,7 @@ This module is for iOS 64bit supporting. It is copied part of the functions from
 <b>-(void)registerForSinglePushChannel</b>
 subscribe to single channel with no need to unsuncribe from current channel first. ONLY the new channel passed to this function will exist after execution.
 
--(void)unsubscribeFromAllChannels
+<b>-(void)unsubscribeFromAllChannels</b>
 unsubscribe from all channels with no need to get current sucscribtions.
 
 Limitation
