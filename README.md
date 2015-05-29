@@ -9,5 +9,8 @@ subscribe to single channel with no need to unsuncribe from current channel firs
 <b>-(void)unsubscribeFromAllChannels</b>
 unsubscribe from all channels with no need to get current sucscribtions.
 
+<h2>Parse Framework</h2>
+Verison 1.7.2
+
 <h2>Limitation</h2>
 ONLY part of the functions from the <a href="https://github.com/ewindso/ios-parse-titanium-module"> ewindso </a>'s version have been implemented. Specifically, only functions regarding Objects and Push notification implemented in this module. 
