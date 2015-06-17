@@ -7,7 +7,7 @@ This module is for iOS 64bit supporting. It is copied part of the functions from
 subscribe to single channel with no need to unsuncribe from current channel first. ONLY the new channel passed to this function will exist after execution.
 
 <b>-(void)unsubscribeFromAllChannels</b>
-unsubscribe from all channels with no need to get current sucscribtions.
+unsubscribe from all channels with no need to get current subscribtions.
 
 <h2>Parse Framework</h2>
 Verison 1.7.2
