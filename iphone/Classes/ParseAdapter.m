@@ -58,6 +58,17 @@ static ParseAdapter *sharedAdapter;
     }];
 }
 
+- (void)registerForMultiplePushChannel:(NSString *)deviceToken andSubscribeToChannel:(NSArray *)channels withCallback:(void(^)(BOOL, NSError *))callbackBlock {
+    
+    // Store the deviceToken in the current Installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    currentInstallation.channels = channels;
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        callbackBlock(succeeded, error);
+    }];
+}
+
 - (void)unsubscribeFromPushChannel:(NSString *)channel withCallback:(void(^)(BOOL, NSError *))callbackBlock {
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation removeObject:channel forKey:@"channels"];

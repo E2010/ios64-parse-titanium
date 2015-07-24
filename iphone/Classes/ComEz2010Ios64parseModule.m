@@ -139,19 +139,27 @@
     }];
 }
 
--(void)unsubscribeFromPush:(id)args {
+-(void)registerForMultiplePushChannel:(id)args {
     ENSURE_ARG_COUNT(args, 2);
     
     __block ComEz2010Ios64parseModule *selfRef = self;
     
-    NSString *channel = [args objectAtIndex:0];
-    KrollCallback *callback = [args objectAtIndex:1];
+    NSString *deviceToken = [args objectAtIndex:0];
+    NSArray *channels = [args objectAtIndex:1];
+    KrollCallback *callback = [args objectAtIndex:2];
+    NSLog(@"DEBUG: %@", channels);
     
     ParseAdapter *pa = [ParseAdapter sharedParseAdapter];
-    [pa unsubscribeFromPushChannel:channel withCallback:^(BOOL success, NSError *error){
+    [pa registerForMultiplePushChannel:deviceToken andSubscribeToChannel:channels withCallback:^(BOOL success, NSError *error){
         NSDictionary *result = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:success], @"success", [error userInfo], @"error", nil];
         [selfRef _fireEventToListener:@"completed" withObject:result listener:callback thisObject:nil];
     }];
+    /*
+    ParseAdapter *pa = [ParseAdapter sharedParseAdapter];
+    [pa registerForMultiplePushChannel:deviceToken andSubscribeToChannel:channels withCallback:^(BOOL success, NSError *error){
+        NSDictionary *result = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:success], @"success", [error userInfo], @"error", nil];
+        [selfRef _fireEventToListener:@"completed" withObject:result listener:callback thisObject:nil];
+    }];*/
 }
 
 -(void)unsubscribeFromAllChannels:(id)args {
