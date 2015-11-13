@@ -20,4 +20,4 @@ In order to compile and build in your own Titanium/Appcelerator environment. Ple
 
 2 values are important in this file, TITANIUM_SDK_VERSION and TITANIUM_SDK. 
 
-If you are not sure what value is correct. The simple way to get the correct setting is this. Creating a brand new ios Module in Titanium/Appcelerator studio with menu File -> New -> Mobile Module Project. Make sure select ios Module. Follow this step and let the studio created a module automatically. Copy the content of file "iphone/titanium.xcconfig" in this new into the same file in parse module. Then it is good to compile.
+If you are not sure what value is correct. The simple way to get the correct setting is this. Creating a brand new ios Module in Titanium/Appcelerator studio with menu File -> New -> Mobile Module Project. Make sure select ios Module. Follow the steps and let the studio created a module automatically. Copy the content of file "iphone/titanium.xcconfig" in this new into the same file in parse module. Then it is good to compile.
