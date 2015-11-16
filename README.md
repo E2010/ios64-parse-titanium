@@ -16,8 +16,15 @@ Verison 1.7.2
 ONLY part of the functions from the <a href="https://github.com/ewindso/ios-parse-titanium-module"> ewindso </a>'s version have been implemented. Specifically, only functions regarding Objects and Push notification implemented in this module. 
 
 <h2> Start to build </h2>
+<b>1.Titanium/Appcelerator</b><br/>
 In order to compile and build in your own Titanium/Appcelerator environment. Please make sure the settings in this file (ios64-parse-titanium/iphone/titanium.xcconfig) is correct. 
 
 2 values are important in this file, TITANIUM_SDK_VERSION and TITANIUM_SDK. 
 
 If you are not sure what value is correct. The simple way to get the correct setting is this. Creating a brand new ios Module in Titanium/Appcelerator studio with menu File -> New -> Mobile Module Project. Make sure select ios Module. Follow the steps and let the studio created a module automatically. Copy the content of file "iphone/titanium.xcconfig" in this new into the same file in parse module. Then it is good to compile.
+
+<b>2.Xcode 7</b><br/>
+This module has just been updated to be compile and build using Xcode 7. The only change is links to 2 libs, libz and libsqlite3. You can change it by yourself by <br/>
+1. Opening the "iphone/iOS64TitaniumParse.xcodeproj" with Xcode
+2. Delete the old libs links which marked red in project navigator.
+3. Add new libs with the steps in the answersing part of this link. http://stackoverflow.com/questions/31420166/libsqlite3-dylib-and-libz-dylib-missing-in-xcode-7-how-do-i-use-parse
