@@ -32,8 +32,6 @@
 		B61AEBDC1AFA70BC0017E377 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD11AFA70BB0017E377 /* CFNetwork.framework */; };
 		B61AEBDD1AFA70BC0017E377 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD21AFA70BB0017E377 /* CoreGraphics.framework */; };
 		B61AEBDE1AFA70BC0017E377 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD31AFA70BB0017E377 /* CoreLocation.framework */; };
-		B61AEBDF1AFA70BC0017E377 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD41AFA70BB0017E377 /* libsqlite3.dylib */; };
-		B61AEBE01AFA70BC0017E377 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD51AFA70BB0017E377 /* libz.dylib */; };
 		B61AEBE11AFA70BC0017E377 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD61AFA70BB0017E377 /* MobileCoreServices.framework */; };
 		B61AEBE21AFA70BC0017E377 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD71AFA70BB0017E377 /* QuartzCore.framework */; };
 		B61AEBE31AFA70BC0017E377 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBD81AFA70BC0017E377 /* Security.framework */; };
@@ -43,6 +41,8 @@
 		B61AEBFD1AFAA87F0017E377 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AEBF71AFAA87F0017E377 /* Parse.framework */; };
 		B61AEC141AFBB39C0017E377 /* ParseAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B61AEC131AFBB39C0017E377 /* ParseAdapter.h */; };
 		B61AEC161AFBB3C00017E377 /* ParseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B61AEC151AFBB3C00017E377 /* ParseAdapter.m */; };
+		B64F88DA1BFA201D00809B8A /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F88D91BFA201D00809B8A /* libz.1.dylib */; };
+		B64F88DC1BFA203B00809B8A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F88DB1BFA203B00809B8A /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,6 @@
 		B61AEBD11AFA70BB0017E377 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B61AEBD21AFA70BB0017E377 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B61AEBD31AFA70BB0017E377 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		B61AEBD41AFA70BB0017E377 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		B61AEBD51AFA70BB0017E377 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B61AEBD61AFA70BB0017E377 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B61AEBD71AFA70BB0017E377 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B61AEBD81AFA70BC0017E377 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -78,6 +76,8 @@
 		B61AEBF71AFAA87F0017E377 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = platform/Parse.framework; sourceTree = "<group>"; };
 		B61AEC131AFBB39C0017E377 /* ParseAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseAdapter.h; path = Classes/ParseAdapter.h; sourceTree = "<group>"; };
 		B61AEC151AFBB3C00017E377 /* ParseAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseAdapter.m; path = Classes/ParseAdapter.m; sourceTree = "<group>"; };
+		B64F88D91BFA201D00809B8A /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		B64F88DB1BFA203B00809B8A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libComEz2010Ios64parse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComEz2010Ios64parse.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,12 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64F88DC1BFA203B00809B8A /* libsqlite3.dylib in Frameworks */,
+				B64F88DA1BFA201D00809B8A /* libz.1.dylib in Frameworks */,
 				B61AEBDB1AFA70BC0017E377 /* AudioToolbox.framework in Frameworks */,
 				B61AEBDC1AFA70BC0017E377 /* CFNetwork.framework in Frameworks */,
 				B61AEBDD1AFA70BC0017E377 /* CoreGraphics.framework in Frameworks */,
 				B61AEBDE1AFA70BC0017E377 /* CoreLocation.framework in Frameworks */,
-				B61AEBDF1AFA70BC0017E377 /* libsqlite3.dylib in Frameworks */,
-				B61AEBE01AFA70BC0017E377 /* libz.dylib in Frameworks */,
 				B61AEBFD1AFAA87F0017E377 /* Parse.framework in Frameworks */,
 				B61AEBE11AFA70BC0017E377 /* MobileCoreServices.framework in Frameworks */,
 				B61AEBE21AFA70BC0017E377 /* QuartzCore.framework in Frameworks */,
@@ -128,14 +128,14 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B64F88DB1BFA203B00809B8A /* libsqlite3.dylib */,
+				B64F88D91BFA201D00809B8A /* libz.1.dylib */,
 				B61AEBF61AFAA87F0017E377 /* Bolts.framework */,
 				B61AEBF71AFAA87F0017E377 /* Parse.framework */,
 				B61AEBD01AFA70BB0017E377 /* AudioToolbox.framework */,
 				B61AEBD11AFA70BB0017E377 /* CFNetwork.framework */,
 				B61AEBD21AFA70BB0017E377 /* CoreGraphics.framework */,
 				B61AEBD31AFA70BB0017E377 /* CoreLocation.framework */,
-				B61AEBD41AFA70BB0017E377 /* libsqlite3.dylib */,
-				B61AEBD51AFA70BB0017E377 /* libz.dylib */,
 				B61AEBD61AFA70BB0017E377 /* MobileCoreServices.framework */,
 				B61AEBD71AFA70BB0017E377 /* QuartzCore.framework */,
 				B61AEBD81AFA70BC0017E377 /* Security.framework */,
@@ -208,7 +208,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iOS64TitaniumParse" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -366,6 +366,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/ComEz2010Ios64parse.dst;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
