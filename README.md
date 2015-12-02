@@ -1,8 +1,9 @@
 # iOS 64bit Parse Module for Titanium
 
 <h2> Release Note </h2>
-1. Add Push notification analytics function for tracking whether user open the app through push notification. The request NO change of the app code.
-2. Upgarde to Parse Framework 1.10.0
+<b>V 1.2.0</b>
+1. Add Push notification analytics function for tracking whether user open the app through push notification. This request NO change of the app code.
+2. Upgrade to Parse Framework 1.10.0
 3. Compiled with Appcelerator SDK 5.1.0.GA
 
 <h2> About Module </h2>
