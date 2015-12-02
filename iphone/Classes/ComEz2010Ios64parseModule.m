@@ -9,9 +9,84 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#import "TiApp.h"
+#import "JRSwizzle.h"
 
+//added - Create a category which adds new methods to TiApp
+@implementation TiApp (ParseTi)
+
+- (void)parsetiApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions_ {
+    // If you're successful, you should see the following output from titanium
+    NSLog(@"[INFO] -- ParseTi#didFinishLaunchingWithOptions: --");
+    
+    [self parsetiApplication:application didFinishLaunchingWithOptions:launchOptions_];
+    
+    if (application.applicationState != UIApplicationStateBackground) {
+        // Track an app open here if we launch with a push, unless
+        // "content_available" was used to trigger a background push (introduced
+        // in iOS 7). In that case, we skip tracking here to avoid double
+        // counting the app-open.
+        BOOL preBackgroundPush = ![application respondsToSelector:@selector(backgroundRefreshStatus)];
+        BOOL oldPushHandlerOnly = ![self respondsToSelector:@selector(application:didReceiveRemoteNotification:fetchCompletionHandler:)];
+        BOOL noPushPayload = ![launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+        if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
+            [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+        }
+    }
+}
+
+- (void)parsetiApplication:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    // If you're successful, you should see the following output from titanium
+    NSLog(@"[INFO] -- ParseTi#didReceiveRemoteNotification: --");
+    
+    [self parsetiApplication:application didReceiveRemoteNotification:userInfo];
+    
+    if (application.applicationState == UIApplicationStateInactive) {
+        // The application was just brought from the background to the foreground,
+        // so we consider the app as having been "opened by a push notification."
+        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
+    }
+}
+
+- (void)parsetiApplication:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    // If you're successful, you should see the following output from titanium
+    NSLog(@"[INFO] -- ParseTi#didReceiveRemoteNotification:fetchCompletionHandler --");
+
+    [self parsetiApplication:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+    
+    if (application.applicationState == UIApplicationStateInactive) {
+        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
+    }
+}
+
+@end
 
 @implementation ComEz2010Ios64parseModule
+
++ (void)load {
+    NSError *error = nil;
+    [TiApp jr_swizzleMethod:@selector(application:didFinishLaunchingWithOptions:)
+                 withMethod:@selector(parsetiApplication:didFinishLaunchingWithOptions:)
+                      error:&error];
+    
+    if(error)
+        NSLog(@"[WARN] Cannot swizzle parsetiApplication:didFinishLaunchingWithOptions: %@", error);
+    
+    [TiApp jr_swizzleMethod:@selector(application:didReceiveRemoteNotification:)
+                 withMethod:@selector(parsetiApplication:didReceiveRemoteNotification:)
+                      error:&error];
+    
+    if(error)
+        NSLog(@"[WARN] Cannot swizzle parsetiApplication:didReceiveRemoteNotification: %@", error);
+
+    [TiApp jr_swizzleMethod:@selector(application:didReceiveRemoteNotification:fetchCompletionHandler:)
+                 withMethod:@selector(parsetiApplication:didReceiveRemoteNotification:fetchCompletionHandler:)
+                      error:&error];
+    
+    if(error)
+        NSLog(@"[WARN] Cannot swizzle parsetiApplication:didReceiveRemoteNotification:fetchCompletionHandler: %@", error);
+}
+
 
 #pragma mark Internal
 

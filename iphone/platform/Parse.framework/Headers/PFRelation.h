@@ -1,22 +1,18 @@
-//
-//  PFRelation.h
-//
-//  Copyright 2011-present Parse Inc. All rights reserved.
-//
+/**
+ * Copyright (c) 2015-present, Parse, LLC.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_OS_IPHONE
-#import <Parse/PFNullability.h>
 #import <Parse/PFObject.h>
 #import <Parse/PFQuery.h>
-#else
-#import <ParseOSX/PFNullability.h>
-#import <ParseOSX/PFObject.h>
-#import <ParseOSX/PFQuery.h>
-#endif
 
-PF_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  The `PFRelation` class that is used to access all of the children of a many-to-many relationship.
@@ -27,7 +23,7 @@ PF_ASSUME_NONNULL_BEGIN
 /*!
  @abstract The name of the class of the target child objects.
  */
-@property (nonatomic, strong) NSString *targetClass;
+@property (nullable, nonatomic, copy) NSString *targetClass;
 
 ///--------------------------------------
 /// @name Accessing Objects
@@ -36,7 +32,7 @@ PF_ASSUME_NONNULL_BEGIN
 /*!
  @abstract Returns a <PFQuery> object that can be used to get objects in this relation.
  */
-- (PF_NULLABLE PFQuery *)query;
+- (PFQuery *)query;
 
 ///--------------------------------------
 /// @name Modifying Relations
@@ -58,4 +54,4 @@ PF_ASSUME_NONNULL_BEGIN
 
 @end
 
-PF_ASSUME_NONNULL_END
+NS_ASSUME_NONNULL_END
