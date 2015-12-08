@@ -26,7 +26,7 @@
 // IMPORTANT NOTE: always use $(inherited) in your overrides
 // 
 
-FRAMEWORK_SEARCH_PATHS=$(SRCROOT)/../../modules/iphone/com.ez2010.ios64parse/1.0.0/platform /Library/Application\ Support/Titanium/modules/iphone/com.ez2010.ios64parse/1.0.0/platform ~/Library/Application\ Support/Titanium/modules/iphone/com.ez2010.ios64parse/1.0.0/platform
+FRAMEWORK_SEARCH_PATHS=$(SRCROOT)/../../modules/iphone/com.ez2010.ios64parse/1.2.0/platform /Library/Application\ Support/Titanium/modules/iphone/com.ez2010.ios64parse/1.2.0/platform ~/Library/Application\ Support/Titanium/modules/iphone/com.ez2010.ios64parse/1.2.0/platform
 
 //OTHER_LDFLAGS=$(inherited) -F"$(SRCROOT)/../../modules/iphone/com.ez2010.ios64parse/1.0.0/platform" -framework Parse
 
