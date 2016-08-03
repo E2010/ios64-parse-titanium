@@ -27,6 +27,14 @@ static ParseAdapter *sharedAdapter;
     //              clientKey:@"L4EZXj2nE1lm4CQzzVo9w7p3bLPbtOz423HFqaFi"];
 }
 
+- (void)initializeWithConfiguration:(NSString *)appId clientKey:(NSString *)clientKey serverUrl:(NSString *)serverUrl{
+    [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
+        configuration.applicationId = appId;
+        configuration.clientKey = clientKey;
+        configuration.server = serverUrl;
+    }]];
+}
+
 - (void)clearBadge {
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     if (currentInstallation.badge != 0) {

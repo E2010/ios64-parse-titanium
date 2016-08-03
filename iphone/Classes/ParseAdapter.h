@@ -13,6 +13,7 @@
 
 +(ParseAdapter *)sharedParseAdapter;
 -(void)setApplicationId:(NSString *)appId clientKey:(NSString *)clientKey;
+- (void)initializeWithConfiguration:(NSString *)appId clientKey:(NSString *)clientKey serverUrl:(NSString *)serverUrl;
 
 // PFPush
 - (void)registerForPushWithDeviceToken:(NSString *)deviceToken andSubscribeToChannel:(NSString *)channel withCallback:(void(^)(BOOL, NSError *))callbackBlock;

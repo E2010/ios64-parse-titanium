@@ -175,6 +175,19 @@
     [pa setApplicationId:appId clientKey:clientKey];    
 }
 
+-(void)initParseWithConfig:(id)args {
+    ENSURE_ARG_COUNT(args, 1);
+    
+    NSDictionary *argsDic = [args objectAtIndex:0];
+    
+    NSString *appId = [argsDic objectForKey:@"appId"];
+    NSString *clientKey = [argsDic objectForKey:@"clientKey"];
+    NSString *serverUrl = [argsDic objectForKey:@"serverUrl"];
+    
+    ParseAdapter *pa = [ParseAdapter sharedParseAdapter];
+    [pa initializeWithConfiguration:appId clientKey:clientKey serverUrl:serverUrl];
+}
+
 -(void)clearBadge:(id)args{
     ENSURE_ARG_COUNT(args, 0);
     ParseAdapter *pa = [ParseAdapter sharedParseAdapter];
