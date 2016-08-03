@@ -3,13 +3,12 @@
 <h2> Release Note </h2>
 <b>V 2.0</b><br/>
 1. Upgrade to Parse Framework 1.14.2<br/>
-2. New function added to Support migrated Parse server to own host<br/>
-	      Parse.initParseWithConfig({
-	        appId: Alloy.CFG.apikeys.parse.app_id,
-	        clientKey: Alloy.CFG.apikeys.parse.client_key,
-	        serverUrl: Alloy.CFG.apikeys.parse.server_url  // e.g.: "http://localhost:1337/parse"
-	      });
-       
+2. New function added to Support migrated Parse server to own host<br/><br/>
+	      Parse.initParseWithConfig({ <br/>
+	        appId: Alloy.CFG.apikeys.parse.app_id, <br/>
+	        clientKey: Alloy.CFG.apikeys.parse.client_key, <br/>
+	        serverUrl: Alloy.CFG.apikeys.parse.server_url  // e.g.: "http://localhost:1337/parse" <br/>
+	      }); <br/>
 
 <b>V 1.2.0</b><br/>
 1. Add Push notification analytics function for tracking whether user open the app through push notification. This request NO change of the app code.<br/>
