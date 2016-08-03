@@ -1,6 +1,16 @@
 # iOS 64bit Parse Module for Titanium
 
 <h2> Release Note </h2>
+<b>V 2.0</b><br/>
+1. Upgrade to Parse Framework 1.14.2<br/>
+2. New function added to Support migrated Parse server to own host<br/>
+	      Parse.initParseWithConfig({
+	        appId: Alloy.CFG.apikeys.parse.app_id,
+	        clientKey: Alloy.CFG.apikeys.parse.client_key,
+	        serverUrl: Alloy.CFG.apikeys.parse.server_url  // e.g.: "http://localhost:1337/parse"
+	      });
+       
+
 <b>V 1.2.0</b><br/>
 1. Add Push notification analytics function for tracking whether user open the app through push notification. This request NO change of the app code.<br/>
 2. Upgrade to Parse Framework 1.10.0<br/>
@@ -16,7 +26,7 @@ subscribe to single channel with no need to unsuncribe from current channel firs
 unsubscribe from all channels with no need to get current subscribtions.
 
 <h2>Parse Framework</h2>
-Verison 1.10.0
+Verison 1.14.2
 
 <h2>Limitation</h2>
 ONLY part of the functions from the <a href="https://github.com/ewindso/ios-parse-titanium-module"> ewindso </a>'s version have been implemented. Specifically, only functions regarding Objects and Push notification implemented in this module. 
