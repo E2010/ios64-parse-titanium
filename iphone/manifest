@@ -7,7 +7,7 @@ apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: iOS64TitaniumParse
 author: Eileen Zhang
-license: Specify your license
+license: MIT
 copyright: Copyright (c) 2015 by Your Company
 
 # these should not be edited
