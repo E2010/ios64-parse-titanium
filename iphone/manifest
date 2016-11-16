@@ -3,7 +3,7 @@
 # during compilation, packaging, distribution, etc.
 #
 version: 2.0
-apiversion: 1.14.2
+apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: iOS64TitaniumParse
 author: Eileen Zhang
@@ -15,4 +15,4 @@ name: iOS64TitaniumParse
 moduleid: com.ez2010.ios64parse
 guid: fac13f8a-1d68-45d2-82ff-4cac163d9b5e
 platform: iphone
-minsdk: 3.5.1.GA
+minsdk: 6.0.0.GA
