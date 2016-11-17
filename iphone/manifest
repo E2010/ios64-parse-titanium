@@ -15,4 +15,4 @@ name: iOS64TitaniumParse
 moduleid: com.ez2010.ios64parse
 guid: fac13f8a-1d68-45d2-82ff-4cac163d9b5e
 platform: iphone
-minsdk: 6.0.0.GA
+minsdk: 5.5.1.GA
