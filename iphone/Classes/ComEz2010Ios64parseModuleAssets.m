@@ -7,18 +7,18 @@ extern NSData* filterDataInRange(NSData* thedata, NSRange range);
 
 @implementation ComEz2010Ios64parseModuleAssets
 
-- (NSData*) moduleAsset
+- (NSData *)moduleAsset
 {
-	
+  
 
-	return nil;
+  return nil;
 }
 
-- (NSData*) resolveModuleAsset:(NSString*)path
+- (NSData *)resolveModuleAsset:(NSString *)path
 {
-	
+  
 
-	return nil;
+  return nil;
 }
 
 @end
