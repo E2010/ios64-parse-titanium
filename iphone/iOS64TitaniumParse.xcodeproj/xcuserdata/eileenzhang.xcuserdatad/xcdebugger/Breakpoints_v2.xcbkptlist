@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "-clearBadge"
+            landmarkName = "-initializeWithConfiguration:clientKey:serverUrl:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

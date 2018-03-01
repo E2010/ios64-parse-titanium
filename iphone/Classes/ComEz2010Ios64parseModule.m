@@ -227,6 +227,13 @@
     }];
 }
 
+-(void)setUserEmail:(id)args {
+  ENSURE_ARG_COUNT(args, 1);
+  NSString *userEmail = [args objectAtIndex:0];
+  ParseAdapter *pa = [ParseAdapter sharedParseAdapter];
+  [pa setUserEmail:userEmail];
+}
+
 -(void)registerForMultiplePushChannel:(id)args {
     ENSURE_ARG_COUNT(args, 2);
     

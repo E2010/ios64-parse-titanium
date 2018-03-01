@@ -27,6 +27,12 @@ static ParseAdapter *sharedAdapter;
     //              clientKey:@"L4EZXj2nE1lm4CQzzVo9w7p3bLPbtOz423HFqaFi"];
 }
 
+- (void)setUserEmail:(NSString *)email{
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    currentInstallation[@"userEmail"] = email;
+    [currentInstallation saveInBackground];
+}
+
 - (void)initializeWithConfiguration:(NSString *)appId clientKey:(NSString *)clientKey serverUrl:(NSString *)serverUrl{
     [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
         configuration.applicationId = appId;
